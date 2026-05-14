@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+    {% block head %}
+    <title>QR Code</title>
+    {% endblock %}
+
+    {% block body %}
+    <h1>QR Genrator</h1>
+
+    <form action="/" method = "POST">
+            <input type="text" name="content" placeholder="Enter the url" required>
+            <input type="submit" value="Genrate">
+    </form>
+    <br>
+
+        {% if image_generated %}
+        <img
+            src="{{ url_for('static', filename='qrcode.png') }}"
+            width="250"
+            alt="QR Code"
+        >   
+        
+        <br><br>
+
+        <a href="/download">
+            <button>
+                Download
+            </button>
+        </a>
+
+        {% else %}
+        <h3>There is no link to make a url</h3>
+
+        
+
+    {% endif %}
+    {% endblock %}

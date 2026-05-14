@@ -1,0 +1,28 @@
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* Input field styling */
+input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Image styling */
+img {
+    margin-top: 20px;
+}
