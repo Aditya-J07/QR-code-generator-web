@@ -5,7 +5,9 @@ A simple QR Code Generator web application built using Flask and Python.
 # Installation
 
 Clone the repository
+
 Create virtual environment
+
 Install required packages
 
 ```bash
